@@ -1,7 +1,7 @@
 # Market-Neutral Trading Strategies
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vasiliadi/market-neutral-trading-basics/blob/main/Pair_Trading.ipynb)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://github.com/vasiliadi/market-neutral-trading-basics/blob/main?labpath=Pair_Trading.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/vasiliadi/market-neutral-trading-basics/blob/main/Pair_Trading.ipynb/main)
 [![Launch in Deepnote](https://deepnote.com/buttons/launch-in-deepnote-white-small.svg)](https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fvasiliadi%2Fmarket-neutral-trading-basics%2Fblob%2Fmain%2FPair_Trading.ipynb)
 [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/vasiliadi/market-neutral-trading-basics/blob/main/Pair_Trading.ipynb) 
 
@@ -61,3 +61,26 @@ Spread mirroring problem. Sometimes (long X, short Y) != (long Y, short X), and 
 ## Liquidity problem
 
 Go into illiquid paper first, then only into liquid paper.
+
+# Speed up
+
+Try to use own functions with [numpy](https://numpy.org/) and [numba](https://numba.pydata.org/). \
+Use [scipy](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.linregress.html#scipy.stats.linregress) or [scikit-learn](https://scikit-learn.org/stable/modules/linear_model.html) insted of [statsmodels](https://www.statsmodels.org/stable/index.html). \
+Try [polars](https://pola.rs/) or [dask](https://www.dask.org/), [pyarrow](https://arrow.apache.org/docs/python/index.html) or [pyspark](https://spark.apache.org/). \
+Everything will depend on the task you want to solve and the amount of data.
+
+Good luck with your research 🤞
+
+# Disclaimer
+
+<i>The information provided here is for general educational and entertainment purposes only. It is presented without any representation or warranties, express or implied, regarding the accuracy, completeness, or applicability of the content to your particular circumstances.
+
+The information should not be construed as professional financial, investment, tax, or legal advice. You should always seek the advice of a qualified professional before making any financial decisions.
+
+Past performance is not a guarantee of future returns. All investments carry risk, including the potential loss of principal invested. There is no assurance that any financial strategy will be successful.
+
+Any references to market performance, securities, investment strategies, portfolios, or asset allocations are provided for illustrative purposes only. They do not constitute a recommendation to buy, sell, or hold a particular investment.
+
+Please consult with a qualified investment professional before making any investment decisions. Use this information at your own risk.
+
+By accessing this repository, you agree to be bound by this disclaimer. If you do not agree with these terms, please do not use this repository.</i>
