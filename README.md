@@ -1,7 +1,7 @@
 # Market-Neutral Trading Strategies
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vasiliadi/market-neutral-trading-basics/blob/main/Pair_Trading.ipynb)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/vasiliadi/market-neutral-trading-basics/blob/main/Pair_Trading.ipynb/main)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/vasiliadi/market-neutral-trading-basics/main?labpath=Pair_Trading.ipynb)
 [![Launch in Deepnote](https://deepnote.com/buttons/launch-in-deepnote-white-small.svg)](https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fvasiliadi%2Fmarket-neutral-trading-basics%2Fblob%2Fmain%2FPair_Trading.ipynb)
 [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/vasiliadi/market-neutral-trading-basics/blob/main/Pair_Trading.ipynb) 
 
