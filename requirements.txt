@@ -1,7 +1,7 @@
-ccxt
-pandas
-tqdm
-scipy
-statsmodels
-matplotlib
-seaborn
+ccxt==4.1.29
+pandas==1.5.3
+tqdm==4.66.1
+scipy==1.11.3
+statsmodels==0.14.0
+matplotlib==3.7.2
+seaborn==0.13.0
