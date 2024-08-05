@@ -1,6 +1,6 @@
 ccxt==4.3.65
 pandas==2.2.2
-tqdm==4.66.4
+tqdm==4.66.5
 scipy==1.14.0
 statsmodels==0.14.2
 matplotlib==3.9.1
