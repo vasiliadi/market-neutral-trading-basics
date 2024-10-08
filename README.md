@@ -1,6 +1,6 @@
 # Market-Neutral Trading Strategies
 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Python](https://img.shields.io/badge/Python-3.11_|_3.12-blue)
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vasiliadi/market-neutral-trading-basics/blob/main/Pair_Trading.ipynb)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/vasiliadi/market-neutral-trading-basics/main?labpath=Pair_Trading.ipynb)
@@ -8,7 +8,7 @@
 [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/vasiliadi/market-neutral-trading-basics/blob/main/Pair_Trading.ipynb)
 [![Run on Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/vasiliadi/market-neutral-trading-basics/blob/main/Pair_Trading.ipynb)
 
-Market-neutral trading strategies aim to generate returns that are not correlated with the overall market movements. 
+Market-neutral trading strategies aim to generate returns that are not correlated with the overall market movements.
 
 Here are some common market-neutral trading variants:
 
@@ -24,7 +24,7 @@ Here are some common market-neutral trading variants:
 
 These are just a few examples of market-neutral trading strategies. The common theme among these strategies is the attempt to generate returns that are uncorrelated with the overall market movements by exploiting pricing inefficiencies and taking offsetting long and short positions.
 
-# Cointegration in time series
+## Cointegration in time series
 
 Today I'll consider only **statistical arbitrage** and its most common approach of **cointegration** in time series.
 
@@ -34,13 +34,13 @@ Cointegration applies to non-stationary time series, meaning their trends and vo
 
 Cointegration helps us move beyond simple correlation, which can be misleading for trending data. It reveals a price series's inherent connection in the long run.
 
-# Backtesting
+## Backtesting
 
 You can backtest your strategy with [vectorbt Pro](https://vectorbt.dev/) or [backtrader](https://www.backtrader.com/). Backtesting is a whole other story...
 
-# How to improve results?
+## How to improve results?
 
-## Moving window
+### Moving window
 
 Try to use [FLS](https://www2.econ.iastate.edu/tesfatsi/flshome.htm) or [RollingOLS](https://www.statsmodels.org/dev/generated/statsmodels.regression.rolling.RollingOLS.html#statsmodels.regression.rolling.RollingOLS) or even [XGBRegressor](https://xgboost.readthedocs.io/en/latest/python/python_api.html#xgboost).
 
@@ -53,19 +53,19 @@ The position entry should be checked. It's necessary to cut off the intervals wh
 Try entering with additional indicators.
 Try additional indicators like [RSI](https://www.investopedia.com/terms/r/rsi.asp), [CCI](https://www.investopedia.com/terms/c/commoditychannelindex.asp), [Momentum](https://www.investopedia.com/terms/m/momentum.asp), [MACD](https://www.investopedia.com/terms/m/macd.asp) or combinations of indicators like [EMA](https://www.investopedia.com/terms/e/ema.asp)+[BB](https://www.investopedia.com/terms/b/bollingerbands.asp)+[Z-score](https://www.investopedia.com/terms/z/zscore.asp), etc.
 
-## Standartization
+### Standartization
 
 If you use [Z-score](https://www.investopedia.com/terms/z/zscore.asp), you can take frequent trades with a small profit in the range -2:2 or less frequent trades -3:3 with a large profit. [Z-score](https://www.investopedia.com/terms/z/zscore.asp) and [BB](https://www.investopedia.com/terms/b/bollingerbands.asp) is good starting point.
 
-## Spread mirroring
+### Spread mirroring
 
 Spread mirroring problem. Sometimes (long X, short Y) != (long Y, short X), and then you should look at [ODR](https://docs.scipy.org/doc/scipy/reference/odr.html) to solve this problem.
 
-## Liquidity problem
+### Liquidity problem
 
 Go into illiquid paper first, then only into liquid paper.
 
-# Speed up
+## Speed up
 
 Try to use own functions with [numpy](https://numpy.org/) and [numba](https://numba.pydata.org/). \
 Use [scipy](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.linregress.html#scipy.stats.linregress) or [scikit-learn](https://scikit-learn.org/stable/modules/linear_model.html) insted of [statsmodels](https://www.statsmodels.org/stable/index.html). \
@@ -74,7 +74,7 @@ Everything will depend on the task you want to solve and the amount of data.
 
 Good luck with your research 🤞
 
-# Disclaimer
+## Disclaimer
 
 <i>The information provided here is for general educational and entertainment purposes only. It is presented without any representation or warranties, express or implied, regarding the accuracy, completeness, or applicability of the content to your particular circumstances.
 
