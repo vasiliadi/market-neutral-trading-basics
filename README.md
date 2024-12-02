@@ -1,6 +1,6 @@
 # Market-Neutral Trading Strategies
 
-![Python](https://img.shields.io/badge/Python-3.11_|_3.12-blue)
+![Python](https://img.shields.io/badge/Python-3.12-blue)
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vasiliadi/market-neutral-trading-basics/blob/main/Pair_Trading.ipynb)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/vasiliadi/market-neutral-trading-basics/main?labpath=Pair_Trading.ipynb)
