@@ -1,5 +1,5 @@
 ccxt==4.4.91
-pandas==2.2.3
+pandas==2.3.0
 tqdm==4.67.1
 scipy==1.15.2
 statsmodels==0.14.4
